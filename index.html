@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>External app sample</title>
+        <base href="." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="External app sample" />
+        <script type="text/javascript" src="common/libs/dropdown/dropdown.js" defer></script>
+        <script type="module" src="index.js"></script>
+        <link rel="stylesheet" href="common/css/constants.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="common/libs/dropdown/dropdown.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="login-page">
+            <h1>Welcome to DevApp</h1>
+            <h2>This is a sample of external API application</h2>
+            <section class="login-form">
+                <label for="env-select">Select environment</label>
+                <div class="custom-select">
+                    <select id="env-select">
+                        <option value="" disabled selected>Select environment</option>
+                        <option value="development">Development</option>
+                        <option value="staging">Staging</option>
+                        <option value="production">Production</option>
+                    </select>
+                </div>
+                <div id="unselected-environment" class="unselected-environment">*Environment is required</div>
+
+                <label for="client-id">Enter ClientID</label>
+                <input id="client-id" placeholder="Please enter your ClientID here" />
+                <div id="unselected-client-id" class="unselected-client-id">*ClientID key is required</div>
+
+                <button id="login-button">Log in</button>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+@import 'common/css/spinner.css';
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-middle);
+    text-align: center;
+    margin: 10px 0;
+}
+
+h2,
+h3 {
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-light);
+    text-align: center;
+    vertical-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-green);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.empty-schedule {
+    text-align: center;
+    margin: 20px;
+}

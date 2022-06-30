@@ -1,0 +1,27 @@
+h4 {
+    font-size: var(--font-size-title);
+    font-weight: var(--font-weight-middle);
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.profile-content,
+.tech-content {
+    padding: 10px 0;
+}
+
+#main {
+    padding: 0 40px;
+}
+
+.tech-content div:first-child,
+.profile div:first-child {
+    font-size: var(--font-size-content-title);
+}
+
+.json-viewer {
+    background-color: var(--white);
+    padding: 5px 0 10px;
+    width: 100%;
+    border-radius: 8px;
+}

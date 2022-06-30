@@ -1,0 +1,72 @@
+/*https://www.w3schools.com/howto/howto_custom_select.asp*/
+.custom-select {
+    width: 315px;
+    position: relative;
+    color: var(--black);
+    margin: 0 0 40px;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    text-align: start;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: '';
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: var(--black) transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active {
+    border-radius: 8px 8px 0 0;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent var(--black) transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: var(--black);
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    border-radius: 0 0 8px 8px;
+    text-align: start;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: var(--middle-red);
+}
+
+.select-items div:last-child:hover,
+.select-items div:last-child.same-as-selected {
+    border-radius: 0 0 8px 8px;
+}

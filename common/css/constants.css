@@ -1,0 +1,24 @@
+:root {
+    --white: #fefefe;
+    --light-green: #cadbde;
+    --dark-green: #6698a1;
+    --light-red: #edddda;
+    --middle-red: #c28d82;
+    --hard-red: #b53b22;
+    --hardest-red: #e20101;
+    --black: #0c1618;
+    --secondary-black: #0c1618cc;
+    --color-type: '';
+
+    --red: #ff0000;
+
+    --font-size-small-text: 10px;
+    --font-size-middle-text: 12px;
+    --font-size-text: 16px;
+    --font-size-content-title: 20px;
+    --font-size-title: 24px;
+
+    --font-weight-light: 500;
+    --font-weight-middle: 600;
+    --font-weight-hard: 700;
+}
