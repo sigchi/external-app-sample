@@ -1,0 +1,119 @@
+.conference-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.conference-card {
+    width: 260px;
+    height: 260px;
+    position: relative;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.conference-card:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 30px 0 var(--secondary-black);
+}
+
+.conference-card .conference-content {
+    transition: bottom 0.5s ease-out;
+}
+
+.conference-card:hover .conference-content {
+    bottom: 0;
+}
+
+.logo-image {
+    width: 260px;
+    height: 260px;
+    border-radius: 8px;
+}
+
+.conference-content {
+    width: 260px;
+    height: 164px;
+    position: absolute;
+    z-index: 99;
+    bottom: -164px;
+    border-radius: 8px;
+    background-color: var(--secondary-black);
+    color: var(--white);
+    padding: 10px 20px;
+}
+
+.conference-full-name {
+    margin: 10px 0 0;
+}
+
+.conference-date,
+.conference-name {
+    color: var(--middle-red);
+}
+
+.conference-date {
+    font-size: 14px;
+}
+
+@media (max-width: 980px) {
+    .conference-card {
+        width: 320px;
+        height: 140px;
+        position: relative;
+        margin: 20px;
+        padding: 0 10px;
+        border-radius: 8px;
+        background-color: transparent;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conference-card:active,
+    .conference-card:hover {
+        background-color: var(--dark-green);
+        box-shadow: unset;
+    }
+
+    .logo-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        background-color: var(--white);
+    }
+
+    .conference-content {
+        width: 160px;
+        height: 120px;
+        position: unset;
+        z-index: 99;
+        bottom: unset;
+        border-radius: 8px;
+        background-color: unset;
+        color: var(--black);
+        padding: unset;
+    }
+
+    .conference-name,
+    .conference-full-name {
+        color: var(--black);
+        margin: unset;
+        font-size: var(--font-size-middle-text);
+    }
+
+    .conference-name {
+        font-weight: var(--font-weight-middle);
+    }
+
+    .conference-date {
+        color: var(--black);
+        font-size: var(--font-size-small-text);
+        font-weight: var(--font-weight-middle);
+    }
+}

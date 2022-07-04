@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>External app sample</title>
+        <base href="." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="External app sample" />
+        <script type="text/javascript" src="../common/libs/jwt-decode.js"></script>
+        <script type="module" src="../common/js/header-buttons.js"></script>
+        <script type="module" src="/content-list/content-list.js"></script>
+        <link rel="stylesheet" href="../common/css/constants.css" />
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="/common/css/cards.css" />
+        <link rel="stylesheet" href="../common/css/header.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <button id="log-out-button" class="log-out">Log out</button>
+            <menu>
+                <nav>
+                    <h1>DevApp</h1>
+                    <button id="conference-button" class="header-button">Conference list</button>
+                    <button id="content-button" class="header-button active">Content list</button>
+                    <button id="my-schedule-button" class="header-button">My schedule</button>
+                    <button id="profile-button" class="header-button">Tech details</button>
+                </nav>
+            </menu>
+        </header>
+        <main id="main">
+            <div id="spinner-wrapper">
+                <div id="loading"></div>
+            </div>
+        </main>
+    </body>
+</html>

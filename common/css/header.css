@@ -1,0 +1,67 @@
+header {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-out {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+menu {
+    margin: 60px 30px 30px;
+    padding: 0 10px;
+    max-width: 784px;
+    width: 100%;
+    display: flex;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-button {
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    margin: 10px 0;
+}
+
+.header-button:hover {
+    background: var(--dark-green);
+    cursor: pointer;
+}
+
+.header-button:disabled {
+    background-color: transparent;
+    cursor: unset;
+}
+
+.active {
+    background: var(--light-green);
+}
+
+@media (min-width: 980px) {
+    menu {
+        margin: 30px 0;
+        height: 60px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+}

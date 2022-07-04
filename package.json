@@ -1,0 +1,21 @@
+{
+    "name": "external-app-sample",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start-http-server": "http-server . -a localhost -p 3008 -c-1 --cors",
+        "prettier:check": "prettier --check ./**/*.{js,css,html,json,md} --ignore-path .gitignore",
+        "prettier:write": "prettier --write ./**/*.{js,css,html,json,md} --ignore-path .gitignore"
+    },
+    "type": "module",
+    "keywords": [
+        "sigchi"
+    ],
+    "author": "sigchi-web",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "http-server": "^14.1.1"
+    }
+}

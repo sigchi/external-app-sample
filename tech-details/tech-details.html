@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>External app sample</title>
+        <base href="." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="External app sample" />
+        <script type="text/javascript" src="../common/libs/jwt-decode.js"></script>
+        <script type="module" src="../common/js/header-buttons.js"></script>
+        <script type="module" src="/tech-details/tech-details.js"></script>
+        <link rel="stylesheet" href="../common/css/constants.css" />
+        <link rel="stylesheet" href="../common/libs/json-viewer/json-viewer.css" />
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="/tech-details/tech-details.css" />
+        <link rel="stylesheet" href="../common/css/header.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <button id="log-out-button" class="log-out">Log out</button>
+            <menu>
+                <nav>
+                    <h1>DevApp</h1>
+                    <button id="conference-button" class="header-button">Conference list</button>
+                    <button id="content-button" class="header-button">Content list</button>
+                    <button id="my-schedule-button" class="header-button">My schedule</button>
+                    <button id="profile-button" class="header-button active">Tech details</button>
+                </nav>
+            </menu>
+        </header>
+        <main id="main">
+            <section class="profile">
+                <h4>Decoded JWT data</h4>
+                <div id="tech-details-json" class="json-viewer"></div>
+            </section>
+            <section>
+                <h4>Tech information</h4>
+                <div class="tech-content">
+                    <div id="conference-list-link"></div>
+                    <div id="conference-list-json" class="json-viewer"></div>
+                </div>
+                <br />
+                <div class="tech-content">
+                    <div id="content-list-link"></div>
+                    <div id="content-list-json" class="json-viewer"></div>
+                </div>
+                <br />
+                <div class="tech-content">
+                    <div id="user-data-link"></div>
+                    <div id="user-data-json" class="json-viewer"></div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
