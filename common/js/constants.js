@@ -4,6 +4,8 @@ export const ENV_PREFIX = {
     production: { app: '', api: 'api' },
 };
 
+export const PRODUCTION_PREFIX = 'external-app-sample';
+
 export const ELEMENTS_ID = {
     LOGIN_BUTTON: 'login-button',
     ENV_SELECT: 'env-select',

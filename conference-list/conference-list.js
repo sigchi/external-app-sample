@@ -7,7 +7,7 @@ import {
     setJSONtoSessionStorage,
     sortByField,
 } from '../common/js/utils.js';
-import { ELEMENTS_ID, MONTHS, STATE } from '../common/js/constants.js';
+import { ELEMENTS_ID, MONTHS, PRODUCTION_PREFIX, STATE } from '../common/js/constants.js';
 
 init();
 localStorage.removeItem(STATE.CONTENT_LIST_LINK);
@@ -39,7 +39,7 @@ function init() {
 }
 
 function clickConference(name, year) {
-    const conferenceLink = `/content-list/content-list.html?name=${name}&year=${year}`;
+    const conferenceLink = `/${PRODUCTION_PREFIX}/content-list/content-list.html?name=${name}&year=${year}`;
     localStorage.setItem(STATE.CONFERENCE_LINK, conferenceLink);
     location.href = location.origin + conferenceLink;
 }
